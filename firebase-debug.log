@@ -1,0 +1,57 @@
+[debug] [2026-02-21T18:27:44.385Z] ----------------------------------------------------------------------
+[debug] [2026-02-21T18:27:44.388Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2026-02-21T18:27:44.389Z] CLI Version:   15.7.0
+[debug] [2026-02-21T18:27:44.389Z] Platform:      win32
+[debug] [2026-02-21T18:27:44.389Z] Node Version:  v24.13.1
+[debug] [2026-02-21T18:27:44.389Z] Time:          Sat Feb 21 2026 18:27:44 GMT+0000 (Greenwich Mean Time)
+[debug] [2026-02-21T18:27:44.389Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\HP\OneDrive - Smart Workplace\Desktop\DEWEDUAWO-Website
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[debug] [2026-02-21T18:30:48.491Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-02-21T18:30:48.492Z] > authorizing via signed-in user (gamenorpe@gmail.com)
+[debug] [2026-02-21T18:30:48.494Z] Checked if tokens are valid: false, expires at: 1771698717302
+[debug] [2026-02-21T18:30:48.494Z] Checked if tokens are valid: false, expires at: 1771698717302
+[debug] [2026-02-21T18:30:48.495Z] > refreshing access token with scopes: []
+[debug] [2026-02-21T18:30:48.499Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-02-21T18:30:48.499Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-02-21T18:30:49.116Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-02-21T18:30:49.116Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-02-21T18:30:49.137Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2026-02-21T18:30:51.775Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2026-02-21T18:30:51.775Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] 
+=== Hosting Setup
+[debug] [2026-02-21T18:31:33.141Z] Checked if tokens are valid: true, expires at: 1771702248116
+[debug] [2026-02-21T18:31:33.141Z] Checked if tokens are valid: true, expires at: 1771702248116
+[debug] [2026-02-21T18:31:33.142Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/deweduawo [none]
+[debug] [2026-02-21T18:31:33.702Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/deweduawo 200
+[debug] [2026-02-21T18:31:33.702Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/deweduawo {"projectId":"deweduawo","projectNumber":"841706178228","displayName":"DEWEDUAWO","name":"projects/deweduawo","resources":{"hostingSite":"deweduawo"},"state":"ACTIVE","etag":"1_51e912a7-f9df-4fe0-932d-1057e2078dcb"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\Users\HP\OneDrive - Smart Workplace\Desktop\DEWEDUAWO-Website is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=78291714&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...

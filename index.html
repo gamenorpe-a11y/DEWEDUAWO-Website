@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DEWEDUAWO | Dr. Godwin Amenorpe</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --emerald-dark:#0F5132;
+  --emerald:#198754;
+  --emerald-light:#D1E7DD;
+  --gold:#C8A951;
+  --white:#ffffff;
+  --soft:#F8F9FA;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Inter',sans-serif;background:var(--soft);color:#333;scroll-behavior:smooth;}
+
+header{
+  position:fixed;
+  width:100%;
+  top:0;
+  background:rgba(15,81,50,0.9);
+  backdrop-filter:blur(8px);
+  padding:15px 0;
+  z-index:1000;
+}
+
+nav{display:flex;justify-content:center;gap:30px;flex-wrap:wrap;}
+nav a{color:white;text-decoration:none;font-weight:500;transition:0.3s;}
+nav a:hover{color:var(--gold);} 
+
+.hero{
+  height:100vh;
+  background:linear-gradient(rgba(15,81,50,0.75),rgba(15,81,50,0.75)),
+  url('https://images.unsplash.com/photo-1589307004395-2a7c6d1f2a0b?q=80&w=1920');
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:white;
+  padding:20px;
+}
+
+.hero-content h1{
+  font-family:'Playfair Display',serif;
+  font-size:3rem;
+  margin-bottom:20px;
+}
+
+.hero-content p{
+  font-size:1.2rem;
+  margin-bottom:30px;
+}
+
+.btn{
+  padding:12px 25px;
+  border:none;
+  border-radius:30px;
+  cursor:pointer;
+  margin:5px;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.btn-primary{background:var(--emerald);color:white;}
+.btn-primary:hover{background:var(--gold);} 
+
+.btn-outline{background:transparent;border:2px solid white;color:white;}
+.btn-outline:hover{background:white;color:var(--emerald-dark);} 
+
+section{padding:100px 20px;max-width:1200px;margin:auto;}
+h2{font-family:'Playfair Display',serif;color:var(--emerald-dark);margin-bottom:40px;text-align:center;}
+
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;}
+
+.card{
+  background:white;
+  padding:30px;
+  border-radius:15px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  transition:0.4s;
+}
+
+.card:hover{transform:translateY(-10px);} 
+
+.about{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;}
+.about img{width:100%;border-radius:15px;box-shadow:0 10px 30px rgba(0,0,0,0.1);} 
+
+.broadcast-box, .radio-box{
+  background:var(--emerald-light);
+  padding:40px;
+  border-radius:20px;
+  text-align:center;
+}
+
+.broadcast-box audio, .radio-box audio{width:100%;max-width:500px;margin-top:20px;}
+
+.contact form{display:flex;flex-direction:column;gap:15px;max-width:500px;margin:auto;}
+.contact input, .contact textarea{padding:12px;border-radius:8px;border:1px solid #ccc;}
+.contact button{background:var(--emerald-dark);color:white;padding:12px;border:none;border-radius:8px;cursor:pointer;}
+.contact button:hover{background:var(--gold);} 
+
+footer{
+  background:var(--emerald-dark);
+  color:white;
+  text-align:center;
+  padding:30px;
+}
+
+@media(max-width:900px){
+  .about{grid-template-columns:1fr;}
+  .hero-content h1{font-size:2.2rem;}
+}
+
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#broadcast">Broadcast</a>
+<a href="#radio">Radio</a>
+<a href="#blog">Blog</a>
+<a href="#shop">Shop</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<div class="hero-content">
+<h1>DEWEDUAWO</h1>
+<p>Empowering Minds. Strengthening Faith. Transforming Communities.</p>
+<button class="btn btn-primary">Join Community</button>
+<button class="btn btn-outline">Watch Live</button>
+</div>
+</section>
+
+<section id="about">
+<h2>About Dr. Godwin Amenorpe</h2>
+<div class="about">
+<img src="JESUS.jpeg" alt="Dr. Godwin Amenorpe">
+<img src="JESUS-IS-LORD.jpeg" alt="JESUS IS LORD">
+<div>
+<p>Welcome to DEWEDUAWO, a faith-driven and growth-centered platform based in the Volta Region of Ghana. Our mission is to nurture spiritual growth, empower communities, and inspire transformation worldwide.</p>
+</div>
+</div>
+</section>
+
+<section id="services">
+<h2>Our Services</h2>
+<div class="card-grid">
+<div class="card"><h3>Spiritual Guidance</h3><p>Faith-based counseling and teachings.</p></div>
+<div class="card"><h3>Educational Empowerment</h3><p>Resources and mentorship programs.</p></div>
+<div class="card"><h3>Community Outreach</h3><p>Programs that uplift and transform lives.</p></div>
+</div>
+</section>
+
+<section id="broadcast">
+<h2>Live Church Broadcast</h2>
+<div class="broadcast-box">
+<p>Join our live Sunday service.</p>
+<audio controls>
+<source src="https://example.com/live-stream-url.mp3" type="audio/mpeg">
+</audio>
+</div>
+</section>
+
+<section id="radio">
+<h2>World News Radio</h2>
+<div class="radio-box">
+<audio controls>
+<source src="https://bbcwssc.ic.llnwd.net/stream/bbcwssc_mp1_ws-eieuk" type="audio/mpeg">
+</audio>
+</div>
+</section>
+
+<section id="blog">
+<h2>Latest Articles</h2>
+<div class="card-grid">
+<div class="card"><h3>Growing in Faith</h3><p>Discover principles of spiritual maturity.</p></div>
+<div class="card"><h3>Leadership & Vision</h3><p>Empowering the next generation.</p></div>
+</div>
+</section>
+
+<section id="shop">
+<h2>Shop Resources</h2>
+<div class="card-grid">
+<div class="card"><h3>Book Title</h3><p>Inspirational resource material.</p><button class="btn btn-primary">Buy Now</button></div>
+<div class="card"><h3>Audio Series</h3><p>Transformational teachings collection.</p><button class="btn btn-primary">Buy Now</button></div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<h2>Contact Us</h2>
+<form>
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea rows="5" placeholder="Your Message" required></textarea>
+<button type="submit">Send Message</button>
+</form>
+</section>
+
+<footer>
+<p>© 2026 DEWEDUAWO | Dr. Godwin Amenorpe | Volta Region, Ghana</p>
+</footer>
+
+</body>
+</html>
